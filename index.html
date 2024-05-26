@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sand</title>
 </head>
+
 <body>
     <div>
         <canvas id="canvas" width="500" height="500"></canvas>
     </div>
+
+    <div id="centerWidth">
+        <svg id="gravityArrow" width="50" height="50">
+            <circle cx="25" cy="25" r="20" stroke="white" stroke-width="2" fill="white" />
+            <circle cx="25" cy="25" r="1" stroke="black" stroke-width="2" fill="black" />
+            <line x1="25" y1="25" x2="25" y2="10" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"
+                style="display: none;" />
+        </svg>
+        <div id="text" style="color: white; font-size: 20px;">Use the arrow keys</div>
+    </div>
 </body>
 
-<script src="./index.js"></script>
+<script type="module" src="./index.js"></script>
 
 <style>
     body {
         background-color: black;
     }
+
     div {
         display: flex;
         justify-content: center;
     }
+
     canvas {
         background-color: white;
     }
+
+    #centerWidth {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 </style>
+
 </html>
