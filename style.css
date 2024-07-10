@@ -1,0 +1,29 @@
+.strokeIndicator {
+    color: rgba(0, 0, 0, 0);
+    position: absolute;
+
+    width: 10px;
+    height: 10px;
+
+    border: 1px solid rgba(255, 0, 0, 1);
+
+    pointer-events: none;
+}
+
+#centerWidth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    font-size: 20px;
+    margin: 10px;
+    color: white;
+}
+
+#configs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

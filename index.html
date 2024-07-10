@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sand</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div>
         <canvas id="canvas" width="500" height="500"></canvas>
+        <div class="strokeIndicator"></div>
+    </div>
+
+    <div id="centerWidth">
+        <svg id="gravityArrow" width="50" height="50">
+            <circle cx="25" cy="25" r="20" stroke="white" stroke-width="2" fill="white" />
+            <circle cx="25" cy="25" r="1" stroke="black" stroke-width="2" fill="black" />
+            <line x1="25" y1="25" x2="25" y2="10" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"
+                style="display: none;" />
+        </svg>
+        <div class="text">Use the arrow keys to control gravity</div>
+        <div class="text">Scroll to change the stroke</div>
+        <div id="configs">
+            <label class="text" for="density">Density:</label>
+            <input type="number" id="density" min="10" max="500" value="100" step="10"/>          
+        </div>
     </div>
 </body>
 
